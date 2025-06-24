@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  try 
+{
+  let n = 10;
+  let r = n / 0;
+
+  if (!isFinite(r)) 
+  {
+    throw "Can not divide by zero!";
+  }
+  document.write(+r ,' is divide by zero')
+} catch (error) 
+{
+  document.write('<br>'+error)
+}
+
+    </script>
+</body>
+</html>
